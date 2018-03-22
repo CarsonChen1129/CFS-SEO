@@ -1,0 +1,418 @@
+<html>
+<head>
+    <title>[Your title here] -- Carnegie Financial Service</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Some keywords regarding your page">
+    <meta name="description" content="Brief description of your webpage">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+
+        *, *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        nav {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: inline-block;
+            background: #fff;
+            -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        nav .logo {
+            float: left;
+        }
+
+        nav .logo a {
+            display: block;
+            padding: 30px 20px;
+            color: #C41E3A;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            position: relative;
+            float: right;
+            margin-right: 100px;
+            display: inline-table;
+        }
+
+        nav ul li {
+            float: left;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        nav ul li:hover {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul li {
+            float: left;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 30px 20px;
+            color: #222;
+            font-size: .9em;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav ul ul {
+            display: none;
+            background: #fff;
+            position: absolute;
+            top: 100%;
+            -webkit-box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+            box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul ul li {
+            float: none;
+            position: relative;
+        }
+
+        nav ul ul li a {
+            padding: 15px 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+
+        .grid {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3.125%;
+        }
+
+        .grid::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        .col-3 {
+            float: left;
+            display: block;
+            margin-right: 3.1684362651%;
+            width: 31.2210424899%;
+        }
+
+        .col-3:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 570px) {
+            .col-3 {
+                float: left;
+                display: block;
+                margin-right: 3.1684362651%;
+                width: 100%;
+            }
+
+            .col-3:last-child {
+                margin-right: 0;
+            }
+        }
+
+        body {
+            background: #EFEFEF;
+            color: #292929;
+            font-family: 'Open Sans', 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+
+        body a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            width: 100%;
+            background: #e0e0e0;
+            -webkit-box-shadow: 0 0 5px 1px black;
+            box-shadow: 0 0 5px 1px black;
+        }
+
+        header .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3.125%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+        }
+
+        header .container button {
+            display: none;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
+
+        @media (max-width: 570px) {
+            header .container button {
+                display: block;
+            }
+        }
+
+        header .container nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+        }
+
+        @media (max-width: 570px) {
+            header .container nav {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                position: absolute;
+                left: 0;
+                top: 71px;
+                width: 100%;
+            }
+
+            header .container nav a {
+                background: #EFEFEF;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        header .container nav a {
+            padding: 22px 10px;
+        }
+
+        header .container nav a:hover {
+            text-decoration: none;
+            background: #c7c7c7;
+        }
+
+        main {
+            height:100vh;
+            width:100%;
+            display:inline-block;
+        }
+
+        footer {
+            width: 100%;
+            background: #292929;
+        }
+
+        footer .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            color: #EFEFEF;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            padding: 3.125%;
+        }
+
+        footer .container .item h3 {
+            font-weight: normal;
+            text-transform: uppercase;
+            margin-bottom: 4vh;
+        }
+
+        footer .container .item a {
+            display: block;
+            line-height: 4vh;
+        }
+
+        .line {
+            width:100%;
+            border-top: 2px solid #FAFAFA;
+        }
+        .legality{
+            margin: auto;
+            width: 700px;
+            text-align: center;
+            clear: both;
+            line-height: 2em;
+            padding: 40px 0 0 0;
+            color:#FAFAFA;
+        }
+
+    </style>
+</head>
+<header>
+    <nav role='navigation'>
+        <div class="logo">
+            <a href="#">Carnegie Financial Service</a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">e-Checking</a>
+                <ul>
+                    <li><a href="">e-Checking</a></li>
+                    <li><a href="">e-Checking</a></li>
+                </ul>
+            </li>
+            <li><a href="#">e-Savings</a>
+                <ul>
+                    <li><a href="">e-Savings</a></li>
+                    <li><a href="">e-Savings</a></li>
+                </ul>
+            </li>
+            <li><a href="#">e-CDs</a>
+                <ul>
+                    <li><a href="">e-CDs</a></li>
+                    <li><a href="">e-CDs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">e-Loans</a>
+                <ul>
+                    <li><a href="">e-Loans</a></li>
+                    <li><a href="">e-Loans</a></li>
+                </ul>
+            </li>
+            <li><a href="#">e-Mortgages</a>
+                <ul>
+                    <li><a href="">e-Mortgages</a></li>
+                    <li><a href="">e-Mortgages</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="wrapper">
+    <main>
+    </main>
+</div>
+</body>
+<footer>
+    <div class='container'>
+        <div class='item'>
+            <h3>Personal Service</h3>
+            <p>
+                <a href='#'>Personal Checking</a>
+                <a href='#'>Personal Money Market</a>
+                <a href='#'>Mortgages</a>
+                <a href='#'>IRAs</a>
+                <a href='#'>Home Equity Line</a>
+                <a href='#'>Personal Loans</a>
+                <a href='#'>Personal Savings</a>
+                <a href='#'>Personal Banking Cards</a>
+                <a href='#'>Personal Internet Banking</a>
+            </p>
+        </div>
+        <div class='item'>
+            <h3>Business Service</h3>
+            <p>
+                <a href='#'>Business Checking</a>
+                <a href='#'>Business Loans</a>
+                <a href='#'>Business Money Market</a>
+                <a href='#'>Business Savings</a>
+                <a href='#'>Business CDs</a>
+                <a href='#'>Merchant Services</a>
+                <a href='#'>Business Banking Cards</a>
+                <a href='#'>Business Internet Banking</a>
+                <a href='#'>eBusiness Service</a>
+            </p>
+        </div>
+        <div class='item'>
+            <h3>Support</h3>
+            <p>
+                <a href='#'>eStatments</a>
+                <a href='#'>Locate ATMs</a>
+                <a href='#'>Order Checks Online</a>
+                <a href='#'>FAQs</a>
+                <a href='#'>Contact us</a>
+            </p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="legality">
+        Carnegie Financial Service © Copyright 2018
+    </div>
+</footer>
+</html>
