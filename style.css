@@ -257,7 +257,7 @@ header .container nav a:hover {
 main .contents {
     max-width: 100%;
     margin: 0 auto;
-    background: url(checking_account.jpg) no-repeat top center;
+    background: url(images/checking_account.jpg) no-repeat top center;
     background-size: cover;
 }
 

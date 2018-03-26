@@ -1,14 +1,22 @@
 <html>
 <head>
-    <title>[Your title here] -- Carnegie Financial Service</title>
+    <title>Contact us -- Learn about bank services from Carnegie Financial Service</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Some keywords regarding your page">
-    <meta name="description" content="Brief description of your webpage">
+    <meta name="keywords" content="carnegie financial service contact us">
+    <meta name="description" content="Carnegie Financial Service contact us">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        main .contents {
+            max-width: 100%;
+            margin: 0 auto;
+            background: url(images/banker.jpg) no-repeat top center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <header>
     <nav role='navigation'>
@@ -59,8 +67,74 @@
     </nav>
 </header>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
     <main>
+        <div class='contents'>
+            <div class='text'>
+                <h1>Carnegie Financial Service</h1>
+                <p>
+                    Your entire financial needs served online, anytime, anywhere, at the best possible rates. That’s CFS!
+                </p>
+            </div>
+        </div>
+        <div class='grid'>
+            <section class="article-preview">
+                <h1>Our Offerings</h1>
+                <p>CFS products run the gamut from free checking accounts and certificates of deposit to home mortgages,
+                    business loans, and personal loans. And, you can conveniently open and manage accounts online,
+                    as well as apply for loans and check the balance and status of anything and everything.
+                    We give our customers maximum electronic access ? in fact we operate 24-7-365 ? and provide them the
+                    best rate on deposits and loans.</p>
+            </section>
+            <br>
+            <section class="article-preview">
+                <h1>We care about your opinions</h1>
+                <p>How can we make the website better?  What information can we provide to help you meet your financial goals?  We&rsquo;d love to hear from you. </p>
+            </section>
+            <section class="article-preview">
+                <h1>Your Comments</h1>
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <form method="post">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="feedback[name]" size="30" maxlength="255" value=""  style="margin:5px 10px" /></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text" name="feedback[email]" size="30" maxlength="255" value="" style="margin:5px 10px" /></td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td><textarea name="feedback[message]" cols="40" rows="5"  style="margin:5px 10px"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>Insert number from picture</td>
+                            <td>
+                                &nbsp;<img src="images/captcha.png" height="30" align="absmiddle" style="margin:5px 10px; margin-left: 5px;" /> &nbsp;
+                                <input type="text" name="feedback[captcha_key]" size="10" maxlength="50" value=""  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <div style="margin-top:5px;"><input type="reset" style="border:1px solid #0075A1; background-color:#eee; font-weight:normal; margin-right:10px;" value="Clear" /> <input type="submit" style="border:1px solid #0075A1; background-color:#eee; font-weight:normal;" value="Send" /></div>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </section>
+            <br>
+            <section class="article-preview">
+                <h1>Contact us</h1>
+                <p>Please feel free to contact us concerning any issues which you may have.</p>
+                <ul>
+                    <li>Call 1-866-246-BANK (1-866-246-2265)</li>
+                    <li>Email customercare@cfs.com</li>
+                    <li>We are available 24/7/365</li>
+                </ul>
+            </section>
+        </div>
     </main>
 </div>
 </body>
