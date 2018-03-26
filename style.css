@@ -400,3 +400,45 @@ footer .container .item a {
     padding: 40px 0 0 0;
     color:#FAFAFA;
 }
+
+main .saving-contents {
+    max-width: 100%;
+    margin: 0 auto;
+    background: url(saving.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+main .saving-contents .text {
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    text-align: right;
+    color: #EFEFEF;
+    line-height: 4vh;
+}
+
+main .saving-contents .text h1 {
+    line-height: 10vh;
+}
+
+main .saving-contents .text p {
+    padding-bottom: 2vh;
+}
+
+main .saving-contents .text .btn {
+    background: #638CCF;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+main .saving-contents .text .btn:hover {
+    text-decoration: none;
+    background: #507ec9;
+}
+
+main .saving-contents .text .btn:active {
+    background: #3c6fc3;
+}
